@@ -2,7 +2,7 @@ import Config
 
 # Configure your database
 config :uploads_phoenix, UploadsPhoenix.Repo,
-  username: "postgres",
+  username: "dean",
   password: "kamanu254",
   hostname: "localhost",
   database: "uploads_phoenix_dev",

@@ -32,6 +32,8 @@ defmodule UploadsPhoenix.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:waffle, "~> 1.1"},
+      {:waffle_ecto, "~> 0.0"},
       {:ash, "~> 3.0"},
       {:ash_authentication, "~> 4.0"},
       {:finch, "~> 0.18"},

@@ -11,6 +11,12 @@ config :uploads_phoenix,
   ecto_repos: [UploadsPhoenix.Repo],
   generators: [timestamp_type: :utc_datetime]
 
+config :waffle,
+  storage: Waffle.Storage.Local,
+  # Edit this path to match your storage directory
+  storage_dir_prefix: "priv/static",
+  storage_dir: "images"
+
 # Configures the endpoint
 config :uploads_phoenix, UploadsPhoenixWeb.Endpoint,
   url: [host: "localhost"],
