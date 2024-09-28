@@ -21,7 +21,15 @@ defmodule UploadsPhoenixWeb.PostLive.FormComponent do
       >
         <.input field={@form[:title]} type="text" label="Title" />
         <.input field={@form[:body]} type="text" label="Body" />
-        <.live_file_input upload={@uploads[:image]} />
+
+        <input
+          class="form-control"
+          id="user_photo"
+          name="user[photo]"
+          accept="image/*"
+          capture="user"
+          type="file"
+        />
         <:actions>
           <.button phx-disable-with="Saving...">Save Post</.button>
         </:actions>
